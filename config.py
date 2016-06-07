@@ -2,6 +2,9 @@ import os
 
 # General Settings
 basedir = os.path.abspath(os.path.dirname(__file__))
+POSTS_PER_PAGE = 3  # Pagination
+
+
 
 ### Security Settings ###
 # App Security
@@ -22,6 +25,8 @@ OPENID_PROVIDERS = [
 # SQLAlchemy Settings
 SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
 SQLALCHEMY_MIGRATE_REPO = os.path.join(basedir, 'db_repository')
+
+
 
 # Mail server settings
 MAIL_SERVER = 'localhost'
