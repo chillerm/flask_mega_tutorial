@@ -22,6 +22,11 @@ lm.login_view = 'login'
 oid = OpenID(app, os.path.join(basedir, 'tmp'))
 
 
+# Configure Emails
+from flask_mail import Mail
+mail = Mail(app)
+
+
 # Logging Setup
 from config import basedir, ADMINS, MAIL_SERVER, MAIL_PORT, MAIL_USERNAME, MAIL_PASSWORD
 

@@ -31,7 +31,7 @@ WHOOSH_BASE = os.path.join(basedir, 'search.db')
 MAX_SEARCH_RESULTS = 50
 
 # Mail server settings
-MAIL_SERVER = 'localhost'
+MAIL_SERVER = 'MAIL2.HOMEDEPOT.COM'
 MAIL_PORT = 25
 MAIL_USERNAME = None
 MAIL_PASSWORD = None
