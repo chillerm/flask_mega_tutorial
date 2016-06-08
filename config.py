@@ -1,3 +1,4 @@
+# coding=utf-8
 import os
 
 # General Settings
@@ -37,3 +38,10 @@ MAIL_USERNAME = None
 MAIL_PASSWORD = None
 
 ADMINS = ['carl_hillerman@homedepot.com']
+
+
+# Multi Language Support with Babel.
+LANGUAGES = {
+    'en': 'English',
+    'es': 'Español'
+}

@@ -56,4 +56,8 @@ if not app.debug:
 from .momentjs import momentjs
 app.jinja_env.globals['momentjs'] = momentjs
 
+# Multi Language support with Babel
+from flask_babel import Babel
+babel = Babel(app)
+
 from app import views, models
