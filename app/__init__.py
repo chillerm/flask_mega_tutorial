@@ -51,4 +51,9 @@ if not app.debug:
     app.logger.addHandler(file_handler)
     app.logger.info('microblog startup')
 
+# Configure date / timestamp handling
+# This exposes the momentjs as a global variable
+from .momentjs import momentjs
+app.jinja_env.globals['momentjs'] = momentjs
+
 from app import views, models
